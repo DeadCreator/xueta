@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bevan:ital@0;1&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Days+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: -199;
+    position: relative;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.greetings h1 {
+    font-size: 5vw;
+}
+
+.greetings a {
+    text-decoration: none;
+    color: #00a32a;
+    font-size: 1.5vw;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    right: 30vw;
+    top: 3vw;
+}
+
+.greetings a:nth-child(2) {
+    right: 15vw;
+}
+
+.greetings img {
+    width: 68vw;
+    margin-top: 25vh;
+}
+
+header {
+    width: 100%;
+    padding: 1vw 5vw;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 14vw;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.main-greetings {
+    background: url("media/scrol.png") no-repeat 0 50%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.props {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-bottom: 17vh;
+}
+
+/* auth section */
+
+.main-auth {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-auth img.triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.main-auth img.man {
+    width: 120vh;
+    position: absolute;
+    left: 35%;
+    z-index: -1;
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
+.main-auth h2 {
+    font-size: 3vw;
+    font-family: Bakbak One, sans-serif;
+    font-weight: 400;
+}
+
+.auth label {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    color: #109806;
+    font-family: Bakbak One, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+.auth input {
+    background: #D9D9D9;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 0.5vw 1vw;
+    height: 2vw;
+    width: 40vw;
+}
+
+.auth p {
+    margin-left: 0.5vw;
+    font-family: Bevan, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.auth p a {
+    text-decoration: none;
+    color: #109806;
+    font-family: Bakbak One, sans-serif;
+}
+
+.auth input[type="submit"] {
+    background-color: #109806;
+    color: #FFC000;
+    align-self: flex-end;
+    margin-top: 3vw;
+    font-family: Bakbak One, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0.5vw 3vw;
+    width: auto;
+}
+
+.main-reg {
+    align-items: flex-start;
+}
+
+.main-reg img.man {
+    width: 45vw;
+    margin-left: 20vw;
+}
+
+.auth.reg {
+    position: relative;
+    width: 80%;
+}
+
+.auth.reg label,
+.auth.reg input {
+    position: relative;
+    width: 30vw;
+    height: 1vw;
+}
+
+.auth.reg label {
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.main-reg .triangle {
+    z-index: -1;
+}
+
+.main-reg h2 {
+    margin-left: 12vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+
+#email, .auth.reg label[for="email"] {
+    left: 15%;
+}
+
+#password, .auth.reg label[for="password"] {
+    left: 20%;
+}
+
+#date, .auth.reg label[for="date"] {
+    left: 25%;
+}
+
+#name, .auth.reg label[for="name"] {
+    left: 30%;
+}
+
+#surname, .auth.reg label[for="surname"] {
+    left: 35%;
+}
+
+#passport_serie, .auth.reg label[for="passport_serie"] {
+    left: 40%;
+}
+
+#passport_num, .auth.reg label[for="passport_num"] {
+    left: 45%;
+}
+
+.auth.reg input[type="submit"] {
+    left: 50%;
+    align-self: flex-start;
+    height: 3vw;
+}
+
+
+/* profile section */
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.main-page h2 {
+    font-family: "Days One", sans-serif;
+    color: #109806;
+    font-size: 3vw;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.profile * {
+    text-align: left;
+}
+
+.main-page .bg {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.main-page .dollar {
+    height: 25%;
+    z-index: 2;
+    left: 2%;
+    bottom: 5%;
+}
+
+.main-page .bg.triangle-up,
+.main-page .bg.triangle-down,
+.main-page .bg.profile-man{
+    right: 0;
+    left: auto;
+    height: 30%;
+}
+
+.main-page .bg.triangle-down,
+.main-page .bg.profile-man {
+    top: 0;
+    bottom: auto;
+    height: 60%;
+}
+
+.profile .avatar {
+    width: 60%;
+    align-self: center;
+    margin-bottom: 3vw;
+}
+
+.main-page .bg.profile-man {
+    height: 20%;
+    top: 13%;
+}
+
+
+.profile h3 {
+    margin: 0.5vw 0;
+    color: #FFC000;
+    font-family: "Cuprum", sans-serif;
+    font-size: 1.5vw;
+}
+
+.profile h3 b {
+    color: black;
+    background-color: #D9D9D9;
+    padding: 0.4vw;
+    border-radius: 40px;
+    font-size: 1.2vw;
+}
+
+
+
+/* header section */
+
+header {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    z-index: 10;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    padding: 0 2vw;
+    gap: 3vw;
+}
+
+#menu-open:checked ~ .menu {
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    flex-direction: column;
+    width: 15vw;
+    top: 6.5vw;
+    right: -150%;
+    transition: right 1s;
+    background-color: #D9D9D9;
+    color: #109806;
+    gap: 3vw;
+    padding: 3vw;
+}
+
+.menu a {
+    color: #109806;
+}
+
+.menu input {
+    background-color: #109806;
+    padding: 0.5vw 1vw;
+    color: #FFC000;
+    font-family: "Cuprum", sans-serif;
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+
+/* DOCS */
+
+.docs {
+    background-color: #FFC000;
+    display: flex;
+    height: 75vh;
+    position: relative;
+    gap: 2vw;
+    padding: 15vh 15vh 10vh 15vh ;
+    z-index: -2;
+}
+
+.docs .hd {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-family: "Days One", sans-serif;
+    font-weight: 800;
+}
+
+.docs section {
+    background-color: white;
+    width: 96%;
+    height: 96%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.docs section h2 {
+    font-family: "Cuprum", sans-serif;
+}
+
+.docs .docs-triangle-1,
+.docs .docs-triangle-2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.docs .docs-triangle-2 {
+    right: auto;
+    left: 0;
+}
+
+.docs ol {
+    margin: 0;
+    padding-left: 1.5vw;
+    z-index: 20;
+}
+
+.doc, .doc a {
+    font-size: 1.3vw;
+    font-family: "Cuprum", sans-serif;
+    margin: 1vw 0;
+}
+
+/* send */
+
+.send-file {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.send-file {
+    margin-top: 10vw;
+}
+
+.send-form h2 {
+    font-size: 3vw;
+    font-family: "Days One", sans-serif;
+
+}
+
+.send-form form{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    padding: 3vw;
+    border-radius: 25px;
+    gap: 1vw;
+    font-family: "Days One", sans-serif;
+
+}
+
+.send-form form input[type="file"] {
+    color: #FFC000;
+}
+
+.send-form form input[type="submit"] {
+    padding: 1vw;
+    border: none;
+    outline: none;
+    background-color: #109806;
+    color: #FFC000;
+    font-family: "Days One", sans-serif;
+    border-radius: 20px;
+}
+
+/* work */
+
+.work {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-rect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.work-man {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.work h2,
+.work h3{
+    color: #FFC000;
+    font-size: 3vw;
+    padding-left: 15vw;
+    font-family: "Days One", sans-serif;
+}
+
+.work h3 {
+    font-size: 2vw;
+    padding-left: 5vw;
+    font-weight: 300;
+}
+
+.doc-list {
+    background-color: #d9d9d9;
+    width: 38vw;
+    margin-left: 2vw;
+    border-radius: 20px;
+    padding: 3vw;
+}
+
+.doc-sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    margin-top: 1vw;
+}
+
+.doc-sign input[type="submit"] {
+    border: none;
+    background-color: #109806;
+    color: #FFC000;
+    font-size: 1.3vw;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+.doc-sign a {
+    font-family: Cuprum, sans-serif;
+    font-size: 1.5vw;
+}
